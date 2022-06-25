@@ -132,6 +132,10 @@ body {
   display: block !important;
 }
 
+.hide {
+  display: none !important;
+}
+
 
 
 // skeleton
@@ -205,6 +209,10 @@ body {
     transform: translate(-50%, 50%);
     z-index: 2;
 
+    &:hover {
+      box-shadow: 0px 0px 40px #53FFAA;
+    }
+
   }
 
   .loader {
@@ -213,6 +221,11 @@ body {
     inset: 0;
     padding: inherit;
     background-color: var(--dark-grayish-blue);
+    padding-bottom: 3rem;
+
+    .divider {
+      margin-bottom: 0;
+    }
   }
 
 }
